@@ -12,7 +12,7 @@ public class StravaLogin {
     private static final String STRAVA_LOGIN_URL_WEB = "https://www.strava.com/oauth/authorize";
 
     private Context context;
-    private int clientID;
+    private long clientID;
     private String redirectURI;
     private ApprovalPrompt approvalPrompt;
     private AccessScope accessScope;
@@ -25,7 +25,7 @@ public class StravaLogin {
         this.context = context;
     }
 
-    public StravaLogin withClientID(int clientID) {
+    public StravaLogin withClientID(long clientID) {
         this.clientID = clientID;
         return this;
     }
