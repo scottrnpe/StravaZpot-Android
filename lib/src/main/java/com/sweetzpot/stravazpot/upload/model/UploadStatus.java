@@ -8,7 +8,7 @@ public class UploadStatus {
     @SerializedName("external_id") private String externalID;
     @SerializedName("error") private String error;
     @SerializedName("status") private String status;
-    @SerializedName("activity_id") private Integer activityID;
+    @SerializedName("activity_id") private long activityID;
 
     public long getID() {
         return ID;
@@ -26,7 +26,7 @@ public class UploadStatus {
         return status;
     }
 
-    public Integer getActivityID() {
+    public long getActivityID() {
         return activityID;
     }
 }
